@@ -1,0 +1,280 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title> Modify Employee </title>
+		<link href="css1.css" type="text/css" rel="stylesheet">
+			<script type="text/javascript">
+			function validate_email(field,alerttxt)
+			{
+				with (field)
+				{
+					apos=value.indexOf("@");
+					dotpos=value.lastIndexOf(".");
+					if (apos<1||dotpos-apos<2)
+					{
+						alert(alerttxt);
+						return false;
+					}
+					else 
+					{
+						return true;
+					}
+				}
+			}
+
+			function validate_form(thisform)
+			{
+				with (thisform)
+				{
+					if (validate_email(email,"Not a valid e-mail address!")==false)
+						{
+							email.focus();
+							return false;
+						}
+				}
+			}
+		</script>
+	</head>
+	<body bgcolor = "RosyBrown">
+		<div class = "header">
+			<img src = "woldia2.png" align = "left">
+			<marquee align = "absmiddle" behavior = "alternate" loop = ""> <h1> <font color = "blue"> Wellcome Manager!!! </font> </h1></marquee>
+		</div>
+		<div class="navigation">
+			<ul>
+				<li> <a href = "home.html"> Home </a> </li>
+				<li> <a href = "ViewComment.html"> View Comment </a> </li>
+				<li> <a href = "GenerateReport.html"> Generate Report </a> </li>
+				<li> <a href = "PostNews"> Post News </a> </li>
+				<li> <a href = "Customer.html"> Customer </a> </li>
+				<li> <a href = "Employee.html"> Employee </a> </li>
+				<li> <a href = "Food.html"> Food </a> </li>
+				<li> <a href = "Suplier.html"> Suplier </a> </li>
+				<li> <a href = "Order.html"> Order </a> </li>
+				<li> <a href = "LogInPage.html"> LogOut </a> </li>
+			</ul>
+		</div>
+		
+		<table align = "right">
+			<tr>
+				<td> <a href = "http://www.facebook.com"> <img src = "facebooks.jpeg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.google.com"> <img src = "google1.jpg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.email.com"> <img src = "email.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.skype.com"> <img src = "skype2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.tewtterr.com"> <img src = "twitter2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.youtube.com"> <img src = "youtube2.bmp"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.yahoo.com"> <img src = "Yahoo.jpeg" alt = "Yahoo"> </td>
+			</tr>
+		</table>
+		
+		<table align = "left">
+			<tr>
+				<td> <a href = "CreateAccount.html"> <b> Create Account </b> </td>
+				
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "RegisterEmployee.html"> <b> Register Employee </b> </td>
+				
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ModifyEmployee.html">  <b> Modify Employee </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "DeleteEmployee.html"> <b> Delete Employee </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ViewEmployee.html"> <b> View Employee </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "SearchEmployee.html"> <b> Search Employee </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ActivateEmployee.html"> <b> Activate Employee </b> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "DeactivateEmployee.html"> <b> Deactivate Employee </b> </td>
+			</tr><tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ViewDeactivateEmployee.html"> <b> ViewDeactivate Employee </b> </td>
+			</tr><tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+		</table>
+		<table align = "center">
+		 <form action="submit.htm" onsubmit="return validate_form(this);" method="post">
+			<tr>
+				<th colspan = "2"> Enter the Id of Employee that you want to update and then apply your updation</th>
+			</tr>
+			<tr>
+				<td> <label for "FName"> FName : </label> </td>
+				<td> <input type = "text" id = "FName" name = "" placeholder = "FName here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "LName"> LName : </label> </td>
+				<td> <input type = "text" id = "LName" name = "" placeholder = "LName here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "EmpID"> EmpID : </label> </td>
+				<td> <input type = "text" id = "EmpID" name = "" placeholder = "EmpId here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "EmptTel"> EmpTel : </label> </td>
+				<td> <input type = "text" id = "EmpTel" name = "" placeholder = "EmpTel here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "EmpAge"> EmpAge : </label> </td>
+				<td> <input type = "number"  min = "1" max = "120"> </td>
+			</tr>
+			<tr>
+				<td> <label for "Address"> Address : </label> </td>
+				<td> <input type = "text" id = "Address" name = "" placeholder = "Emp Address here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "Email"> Email : </label> </td>
+				<td> <input type = "text" id = "Email" name = "email" placeholder = "Emp Email here"> </td>
+			</tr>
+			<tr>
+				<td> <label for "Sex"> Sex : </label> </td>
+				<td> <select name = "Sex">
+					<option value = "Male"> Male </option>
+					<option value = "Female"> Female </option>
+				</td>
+			</tr>
+			<tr>
+				<td> <label for "Salary"> Salary : </label> </td>
+				<td> <input type = "text" id = "Salary" name = "" placeholder = "Salary here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "EmpPosition"> EmpPosition : </label> </td>
+				<td> <input type = "text" id = "EmpPosition" name = "" placeholder = "Position here"> </td>
+			</tr>
+			<tr>
+				<td> <label for "Qualification"> Qualification : </label> </td>
+				<td> <input type = "text" id = "Qualification" name = "" placeholder = "Qualification here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "Experience"> Experience : </label> </td>
+				<td> <input type = "text" id = "Experience" name = "" placeholder = "Experience" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "EmpCity"> EmpCity : </label> </td>
+				<td> <input type = "text" id = "EmpCity" name = "" placeholder = "EmpCity here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "Sex"> Sex : </label> </td>
+				<td> <select name = "Sex">
+					<option value = "Male"> Male </option>
+					<option value = "Female"> Female </option>
+				</td>
+			</tr>
+			<tr>
+				<td> <label for "Birthdate"> Birth Date : </label> </td>
+				<td> <input type = "date" name = "day"></td>
+			</tr>
+			<tr>
+				<td> <label for "Hiredate"> Hire Date : </label> </td>
+				<td> <input type = "date" name = "day"></td>
+			</tr>
+			<tr>
+				<td> <label for "EmpPhoto">  EmpPhoto : </label> </td>
+				<td> <input type = "file"> </td>
+			</tr>
+			<tr>
+				<td> <input type = "submit" value = "Register"> </td>
+				<td> </td>
+			</tr>
+			 <form/>
+		</table>
+		 
+		<div id="tooplate_footer" align = "center">
+    
+        Copyright © 2018 <a href="#">Computer science 3rd year</a> - Design: <a href="Main.html">Group One</a>
+    </div>
+	</body>
+</html>

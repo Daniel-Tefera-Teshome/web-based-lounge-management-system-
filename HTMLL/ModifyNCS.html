@@ -1,0 +1,241 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title> Modify NCS </title>
+		<link href="css1.css" type="text/css" rel="stylesheet">
+				</script>
+		</script>
+	<script type="text/javascript">
+			function validate_email(field,alerttxt)
+			{
+				with (field)
+				{
+					apos=value.indexOf("@");
+					dotpos=value.lastIndexOf(".");
+					if (apos<1||dotpos-apos<2)
+					{
+						alert(alerttxt);
+						return false;
+					}
+					else 
+					{
+						return true;
+					}
+				}
+			}
+
+			function validate_form(thisform)
+			{
+				with (thisform)
+				{
+					if (validate_email(email,"Not a valid e-mail address!")==false)
+						{
+							email.focus();
+							return false;
+						}
+				}
+			}
+		</script>
+		
+	</head>
+	<body bgcolor = "RosyBrown">
+		<div class = "header">
+			<img src = "woldia2.png" align = "left">
+			<marquee align = "absmiddle" behavior = "alternate" loop = ""> <h1> <font color = "blue"> Wellcome Manager!!! </font> </h1></marquee>
+		</div>
+		<div class="navigation">
+			<ul>
+				<li> <a href = "home.html"> Home </a> </li>
+				<li> <a href = "ViewComment.html"> View Comment </a> </li>
+				<li> <a href = "GenerateReport.html"> Generate Report </a> </li>
+				<li> <a href = "#"> Post News </a> </li>
+				<li> <a href = "Customer.html"> Customer </a> </li>
+				<li> <a href = "Employee.html"> Employee </a> </li>
+				<li> <a href = "Food.html"> Food </a> </li>
+				<li> <a href = "Suplier.html"> Suplier </a> </li>
+				<li> <a href = "Order.html"> Order </a> </li>
+				<li> <a href = "LogInPage.html"> LogOut </a> </li>
+			</ul>
+		</div>
+		
+				<table align = "right">
+			<tr>
+				<td> <a href = "http://www.facebook.com"> <img src = "facebooks.jpeg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.google.com"> <img src = "google1.jpg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.email.com"> <img src = "email.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.skype.com"> <img src = "skype2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.tewtterr.com"> <img src = "twitter2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.youtube.com"> <img src = "youtube2.bmp"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.yahoo.com"> <img src = "Yahoo.jpeg" alt = "Yahoo"> </td>
+			</tr>
+		</table>
+		
+		<table align = "left">
+			<tr>
+				<td> <a href = "RegisterNCS.html"> <b> Register NCS </b> </td>
+				
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ModifyNCS.html"> <b> Modify NCS </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "DeleteNCS.html"> <b> Delete NCS </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ViewNCS.html"> <b> View NCS </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "SearchNCS.html"> <b> Search NCS </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ActivateNCS.html"> <b> Activate NCS </b> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "DeactivateNCS.html"> <b> Deactivate NCS </b> </td>
+			</tr><tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ViewDeactivateNCS.html"> <b> ViewDeactivate NCS </b> </td>
+			</tr><tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+		</table>
+		<table align = "center">
+		<form action="submit.htm" onsubmit="return validate_form(this);" method="post">
+			<tr>
+				<th colspan = "2"> <b> Enter the ID that you want to Update then apply your updation</b> </th>
+			</tr>
+			<tr>
+				<td> <label for "FName"> FName : </label> </td>
+				<td> <input type = "text" id = "FName" name = "" placeholder = "FName here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "LName"> LName : </label> </td>
+				<td> <input type = "text" id = "LName" name = "" placeholder = "LName here"required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "CustID"> CustID : </label> </td>
+				<td> <input type = "text" id = "CustID" name = "" placeholder = "Id here"required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "CustTel"> CustTel : </label> </td>
+				<td> <input type = "text" id = "CustTel" name = "" placeholder = "CustTel here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "FName"> Age : </label> </td>
+				<td> <input type = "number"  min = "1" max = "120"> </td>
+			</tr>
+			<tr>
+				<td> <label for "Address"> Address : </label> </td>
+				<td> <input type = "text" id = "Address" name = "" placeholder = "Address here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "Email"> Email : </label> </td>
+				<td> <input type = "text" id = "Email" name = "" placeholder = "Email here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "Sex"> Sex : </label> </td>
+				<td> <select name = "Sex">
+					<option value = "Male"> Male </option>
+					<option value = "Female"> Female </option>
+				</td>
+			</tr>
+			<tr>
+				<td> <input type = "submit" value = "Register"> </td>
+				<td> </td>
+			</tr>
+		</form>
+		</table>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div id="tooplate_footer" align = "center">
+			
+        Copyright © 2018 <a href="#">Computer science 3rd year</a> - Design: <a href="Main.html">Group One</a>
+		
+    </div>
+	</body>
+</html>

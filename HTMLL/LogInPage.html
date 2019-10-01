@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title> Log in Page </title>
+		<link href="css1.css" type="text/css" rel="stylesheet">
+		<!--<script src="login-validations.js"></script> -->
+		<script type="text/javascript">
+			function PassWord(){
+				var username = document.f1.username.value;
+				var password = document.f1.password.value;
+				if(username == "Daniel" && password == "Lounge"){
+					alert("Wellcome");
+					return true;
+				}
+				else{
+					alert("Incorrect Username and PassWord!!!!");
+					return false;
+				}
+			}
+			function Close(){
+				var x = confirm("Are you sure you want to close this page???");
+				if(x == true){
+					close();
+					//System.exit(0); 
+					//alert("hfhgd");
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+			function SearchHandler()
+			{
+			  var url = document.searchform.search.value;
+			  window.open (url); 
+			}
+		</script>
+			
+	</head>
+	<body bgcolor = "RosyBrown" onload="document.registration.username.focus();">
+	<header>
+		<div class = "header">
+			<img src = "woldia2.png" align = "left">
+			<h1 align = "center"> <font color = "red "> Wellcome to Woldia University <br> Online Student Launge  Management System <font> </h1>
+		</div>
+		<form class="search-form" align = "right" name = "searchform">
+				<input type="text"placeholdeer="search" name = "search">
+				<input type = "button" value = "Search" onclick = "SearchHandler();">
+		</form>
+		<div class="navigation">
+			<ul>
+				<li> <a href = "home.html"> Home </a> </li>
+				<li> <a href = "ContactUs.html"> Contact_us </a> </li>
+				<li> <a href = "AboutUs.html"> About_Us </a> </li>
+				<li> <a href = "Menu.php"> Menu </a> </li>
+				<li> <a href = "News.php"> News </a> </li>
+				<li> <a href = "Feedback.php"> Feedback </a> </li>
+				<li> <a href = "LogInPage.html"> Log in </a> </li>
+				<li> <input type = "button" value = "Exit" onclick = "Close();"> </li>
+			</ul>
+		</div>
+		</header>
+		<table align = "right">
+			<tr>
+				<td> <a href = "http://www.facebook.com"> <img src = "facebooks.jpeg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.google.com"> <img src = "google1.jpg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.email.com"> <img src = "email.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.skype.com"> <img src = "skype2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.tewtterr.com"> <img src = "twitter2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.youtube.com"> <img src = "youtube2.bmp"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.yahoo.com"> <img src = "Yahoo.jpeg" alt = "Yahoo"> </td>
+			</tr>
+		</table> <br>
+		<form name = "f1" action="MainMenu.html" onsubmit="return PassWord();" method="post">
+		<!--<form  action = "MainMenu.html" method = "get" name="registration" onSubmit="return formValidation();">
+		<form action="MainMenu.html" method="post" name="form1" onSubmit="return formvalidate()">
+		<!--<form action="MainMenu.html" method="post" name="myform" onsubmit="return formvalidate()">
+		<form action = "MainMenu.html" method = "get" name = "myform" onsubmit="return formvalidate()">-->
+			<fieldset>
+				<legend> <h2 text = "red"> Log In Page </h2> </legend>
+					<table align = "center">
+						<tr style = "Font:Arial; align:center;forground-color:red">
+							<td> <h1> <b> <i> <font color = "blue"> Fill the following to log in </font> </i> </b> </h1> </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td>
+								<label align = "center" for "username"> User Name: </label> 
+								<input align = "center" type = "text" placeholder = "User Name" id = "" name = "username" required> 
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<label align = "center" for "password"> PassWord: </label> &nbsp;
+								<input align = "center" type = "password" placeholder = "Password" id = "" name = "password" required> 
+							</td>
+						</tr>
+						<tr>
+							<td> <input align = "center"  type = "Submit" value = "Log in" > </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <input align = "center" type = "reset" value = "Clear"> 
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <a href = "ForgotPassword.html"> Forgot PassWord </a> </td>
+							<td>  </td>
+						</tr>
+					</table>
+				</fieldset>
+		</form><br><br><br><br><br><br>
+		<div id="tooplate_footer" align = "center" bgcolor = "red">
+    
+        Copyright © 2018 <a href="#">Computer science 3rd year</a> - Design: <a href="Main.html">Group One</a>
+    </div>
+	</body>
+</html>

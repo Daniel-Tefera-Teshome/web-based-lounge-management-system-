@@ -1,0 +1,190 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title> Suplier Registration </title>
+		<link href="css1.css" type="text/css" rel="stylesheet">
+		
+		<script type="text/javascript">
+			function validate_email(field,alerttxt)
+			{
+				with (field)
+				{
+					apos=value.indexOf("@");
+					dotpos=value.lastIndexOf(".");
+					if (apos<1||dotpos-apos<2)
+					{
+						alert(alerttxt);
+						return false;
+					}
+					else 
+					{
+						return true;
+					}
+				}
+			}
+
+			function validate_form(thisform)
+			{
+				with (thisform)
+				{
+					if (validate_email(email,"Not a valid e-mail address!")==false)
+						{
+							email.focus();
+							return false;
+						}
+				}
+			}
+		</script>
+		
+	</head>
+	<body bgcolor = "RosyBrown">
+		<div class = "header">
+			<img src = "woldia2.png" align = "left">
+			<marquee align = "absmiddle" behavior = "alternate" loop = ""> <h1> <font color = "blue"> Wellcome Manager!!! </font> </h1></marquee>
+		</div>
+		<div class="navigation">
+			<ul>
+				<li> <a href = "home.html"> Home </a> </li>
+				<li> <a href = "ViewComment.php"> View Comment </a> </li>
+				<li> <a href = "GenerateReport.html"> Generate Report </a> </li>
+				<li> <a href = "PostNews.php"> Post News </a> </li>
+				<li> <a href = "Customer.html"> Customer </a> </li>
+				<li> <a href = "Employee.html"> Employee </a> </li>
+				<li> <a href = "Food.html"> Food </a> </li>
+				<li> <a href = "Suplier.html"> Suplier </a> </li>
+				<li> <a href = "Order.html"> Order </a> </li>
+				<li> <a href = "LogInPage.html"> LogOut </a> </li>
+			</ul>
+		</div>
+		
+		<table align = "right">
+			<tr>
+				<td> <a href = "http://www.facebook.com"> <img src = "facebooks.jpeg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.google.com"> <img src = "google1.jpg"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.email.com"> <img src = "email.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.skype.com"> <img src = "skype2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.tewtterr.com"> <img src = "twitter2.png"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.youtube.com"> <img src = "youtube2.bmp"> </td>
+			</tr>
+			<tr>
+				<td> <a href = "http://www.yahoo.com"> <img src = "Yahoo.jpeg" alt = "Yahoo"> </td>
+			</tr>
+		</table>
+		
+		<table align = "left">
+			<tr>
+				<td> <a href = "SuplierRegistration.html"> <b> Register Suplier </b> </td>
+				
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ModifySuplier.html">  <b> Modify Suplier </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "RemoveSuplier.html"> <b> Remove Suplier </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "ViewSuplier.html"> <b> View Suplier </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> <a href = "SearchSuplier.html"> <b> Search Suplier </b> </td>
+			</tr>
+			<tr>
+				<td> </td>
+			</tr><tr>
+				<td> </td>
+			</tr>
+			</tr><tr>
+				<td> </td>
+			</tr>
+		</table>
+		<table align = "center">
+		  <form action="submit.htm" onsubmit="return validate_form(this);" method="post">
+			<tr>
+				<td> <label for "SuplierName"> SuplierName : </label> </td>
+				<td> <input type = "text" id = "SuplierName" name = "" placeholder = "Suplier Name here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "SupCity"> SupCity : </label> </td>
+				<td> <input type = "text" id = "SupCity" name = "" placeholder = "Suplier City here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "SupEmail"> SupEmail : </label> </td>
+				<td> <input type = "text" id = "SupEmail" name = "email" placeholder = "Suplier Email here"> </td>
+			</tr>
+			<tr>
+				<td> <label for "SupTel"> SupTel : </label> </td>
+				<td> <input type = "text" id = "SupTel" name = "" placeholder = "Suplier Tel here" required/> </td>
+			</tr>
+			<tr>
+				<td> <label for "SupNo"> SupNo: </label> </td>
+				<td> <input type = "number"  min = "1" max = "1000" required> </td>
+			</tr>
+			<tr>
+				<td> <input type = "submit" value = "Register"> </td>
+				<td> </td>
+			</tr>
+		  </form>
+		</table>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		<div id="tooplate_footer" align = "center">
+    
+        Copyright © 2018 <a href="#">Computer science 3rd year</a> - Design: <a href="Main.html">Group One</a>
+    </div>
+	</body>
+</html>
